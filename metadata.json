@@ -1,0 +1,6 @@
+{
+  "name": "Neol Tube",
+  "description": "Student Management & Video Learning App for Admin and Students with Firebase Cloud Sync, Fees, UPI, and Video Courses",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,49 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Admin profile: accessible by app
+    match /admin_profile/{docId} {
+      allow read, write: if true;
+    }
+    // Profile Visibility Config
+    match /profile_visibility_config/{docId} {
+      allow read, write: if true;
+    }
+    // Students collection
+    match /students/{studentId} {
+      allow read, write: if true;
+    }
+    // Attendance records
+    match /attendance/{attId} {
+      allow read, write: if true;
+    }
+    // Fees records
+    match /fees/{feeId} {
+      allow read, write: if true;
+    }
+    // Payment records
+    match /payments/{paymentId} {
+      allow read, write: if true;
+    }
+    // Notifications
+    match /notifications/{notifId} {
+      allow read, write: if true;
+    }
+    // Leaves
+    match /leaves/{leaveId} {
+      allow read, write: if true;
+    }
+    // Videos (Free & Paid)
+    match /videos/{videoId} {
+      allow read, write: if true;
+    }
+    // Video Purchases
+    match /video_purchases/{purchaseId} {
+      allow read, write: if true;
+    }
+    // Audit logs
+    match /audit_logs/{logId} {
+      allow read, write: if true;
+    }
+  }
+}
